@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Добавить категорию</h1>
+
+{% if error %}
+    <p class="error">{{ error }}</p>
+{% endif %}
+
+<form method="POST" class="add-form">
+    {% csrf_token %}
+
+    <label for="name">Название категории:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="description">Описание:</label>
+    <textarea id="description" name="description"></textarea>
+
+    <button type="submit">Добавить категорию</button>
+</form>
+
+{% endblock %}
