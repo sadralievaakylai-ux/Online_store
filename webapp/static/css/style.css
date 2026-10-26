@@ -63,3 +63,34 @@ main {
     font-size: 18px;
     font-weight: bold;
 }
+
+.product-card a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.product-card a:hover {
+    text-decoration: underline;
+}
+
+.product-detail {
+    display: flex;
+    gap: 30px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.product-detail img {
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-info h1 {
+    margin-top: 0;
+}
