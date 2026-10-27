@@ -51,3 +51,8 @@ def product_add_view(request):
         return redirect('product', pk=product.pk)
 
     return render(request, 'product_add.html', { 'categories': categories })
+
+def categories_view(request):
+    categories = Category.objects.all()
+    return render(request, 'categories.html', {'categories': categories})
+
