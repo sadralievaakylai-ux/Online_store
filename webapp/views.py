@@ -56,3 +56,15 @@ def categories_view(request):
     categories = Category.objects.all()
     return render(request, 'categories.html', {'categories': categories})
 
+def category_edit_view(request, pk):
+    category = get_object_or_404(Category, pk=pk)
+
+    if request.method == 'POST':
+        category.name = request.POST.get('name')
+        category.description = request.POST.get('description')
+
+        category.save()
+
+        return redirect('categories')
+
+    return render(request, 'category_edit.html', {'category': category})

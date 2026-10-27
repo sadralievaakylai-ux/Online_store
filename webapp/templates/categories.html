@@ -8,6 +8,9 @@
     {% for category in categories %}
         <div class="category-card">
             <h2>{{ category.name }}</h2>
+
+            <a href="{% url 'category_edit' category.pk %}"
+               class="edit-button">Edit</a>
         </div>
     {% endfor %}
 </div>
