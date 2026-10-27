@@ -1,0 +1,66 @@
+[
+{
+    "model": "webapp.category",
+    "pk": 1,
+    "fields": {
+        "name": "Фитнес",
+        "description": "Товары для фитнеса и тренировок"
+    }
+},
+{
+    "model": "webapp.category",
+    "pk": 2,
+    "fields": {
+        "name": "Спортивное питание",
+        "description": "Питание для тренировок"
+    }
+},
+{
+    "model": "webapp.category",
+    "pk": 3,
+    "fields": {
+        "name": "Аксессуары для спорта",
+        "description": "Аксессуары для тренировок и спорта"
+    }
+},
+{
+    "model": "webapp.category",
+    "pk": 4,
+    "fields": {
+        "name": "Одежда для спорта",
+        "description": "Одежда для занятий спортом"
+    }
+},
+{
+    "model": "webapp.category",
+    "pk": 5,
+    "fields": {
+        "name": "Спортивная обувь",
+        "description": "Обувь для спорта"
+    }
+},
+{
+    "model": "webapp.product",
+    "pk": 1,
+    "fields": {
+        "name": "Гантели",
+        "description": "Гантели для домашних тренировок",
+        "category": 1,
+        "created_at": "2026-10-26T21:07:03.633Z",
+        "price": "2500.00",
+        "image": "https://lishop.by/upload/iblock/52f/52fb52bcc7bd94ecac5d1482bc6f53af.jpg"
+    }
+},
+{
+    "model": "webapp.product",
+    "pk": 2,
+    "fields": {
+        "name": "Коврик для йоги",
+        "description": "Коврик для фитнеса и йоги",
+        "category": 1,
+        "created_at": "2026-10-27T11:24:54.690Z",
+        "price": "2000.00",
+        "image": "https://cdn.insales-shop.ru/images/products/1/3402/590269770/YM301_800%D1%85800_.jpg"
+    }
+}
+]
