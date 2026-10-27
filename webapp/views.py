@@ -27,3 +27,27 @@ def category_add_view(request):
         return redirect('products')
 
     return render(request, 'category_add.html')
+
+def product_add_view(request):
+    categories = Category.objects.all()
+
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        price = request.POST.get('price')
+        image = request.POST.get('image')
+        category_id = request.POST.get('category')
+        description = request.POST.get('description')
+
+        category = get_object_or_404(Category, pk=category_id)
+
+        product = Product.objects.create(
+            name=name,
+            price=price,
+            image=image,
+            category=category,
+            description=description
+        )
+
+        return redirect('product', pk=product.pk)
+
+    return render(request, 'product_add.html', { 'categories': categories })

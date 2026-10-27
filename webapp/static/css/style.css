@@ -110,7 +110,8 @@ main {
 }
 
 .add-form input,
-.add-form textarea {
+.add-form textarea,
+.add-form select {
     padding: 10px;
     border: 1px solid #cccccc;
     border-radius: 5px;
