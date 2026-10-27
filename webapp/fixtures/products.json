@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
         "name": "Фитнес",
-        "description": "Товары для фитнеса и тренировок"
+        "description": "Товары для фитнеса и тренировок в зале и дома"
     }
 },
 {
@@ -43,11 +43,11 @@
     "model": "webapp.product",
     "pk": 1,
     "fields": {
-        "name": "Гантели",
+        "name": "Гантели ",
         "description": "Гантели для домашних тренировок",
         "category": 1,
         "created_at": "2026-10-26T21:07:03.633Z",
-        "price": "2500.00",
+        "price": "2100.00",
         "image": "https://lishop.by/upload/iblock/52f/52fb52bcc7bd94ecac5d1482bc6f53af.jpg"
     }
 },
@@ -61,6 +61,54 @@
         "created_at": "2026-10-27T11:24:54.690Z",
         "price": "2000.00",
         "image": "https://cdn.insales-shop.ru/images/products/1/3402/590269770/YM301_800%D1%85800_.jpg"
+    }
+},
+{
+    "model": "webapp.product",
+    "pk": 3,
+    "fields": {
+        "name": "Протеин",
+        "description": "Концентрированный белок в форме порошка",
+        "category": 2,
+        "created_at": "2026-10-27T11:36:11.447Z",
+        "price": "4300.00",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBuvfMNv30tEkq_Dy6rNFtdfBRLByWTI6cj00AL4Ix-g&s=10"
+    }
+},
+{
+    "model": "webapp.product",
+    "pk": 4,
+    "fields": {
+        "name": "Шейкер",
+        "description": "Бутылка для смешивания спортивного питания",
+        "category": 3,
+        "created_at": "2026-10-27T11:37:53.727Z",
+        "price": "500.00",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAtqvJBqgwMNBl7KzccXJvQJ1zpDBbs5cDQxs9Gix-Lw&s=10"
+    }
+},
+{
+    "model": "webapp.product",
+    "pk": 5,
+    "fields": {
+        "name": "Спортивный топ",
+        "description": "Удобный топ для занятий спортом",
+        "category": 4,
+        "created_at": "2026-10-27T11:38:42.980Z",
+        "price": "1800.00",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtOK-FC57lk-j-HN7u2RPyujo08QC0xNhQQkofbguXcA&s=10"
+    }
+},
+{
+    "model": "webapp.product",
+    "pk": 6,
+    "fields": {
+        "name": "Кроссовки с пальцами",
+        "description": "Удобная обувь для йоги, фитнеса и зала",
+        "category": 5,
+        "created_at": "2026-10-27T11:40:26.800Z",
+        "price": "6700.00",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJJwf_NWjydSh1dekNXyEqcOSS6mYzewLJ0NNENmBBxA&s=10"
     }
 }
 ]
