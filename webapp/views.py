@@ -68,3 +68,11 @@ def category_edit_view(request, pk):
         return redirect('categories')
 
     return render(request, 'category_edit.html', {'category': category})
+
+def category_delete_view(request, pk):
+    category = get_object_or_404(Category, pk=pk)
+
+    if request.method == 'POST':
+        category.delete()
+
+    return redirect('categories')

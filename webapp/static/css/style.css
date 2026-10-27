@@ -153,7 +153,7 @@ main {
 }
 
 .edit-button {
-    background-color: #d99aaa;
+    background-color: #ff527e;
     color: white;
     padding: 8px 15px;
     border-radius: 5px;
@@ -162,4 +162,24 @@ main {
 
 .edit-button:hover {
     background-color: #c78196;
+}
+
+.category-actions{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.delete-button {
+    background-color: #c96f89;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+.delete-button:hover {
+    background-color: #b95875;
 }

@@ -9,8 +9,18 @@
         <div class="category-card">
             <h2>{{ category.name }}</h2>
 
-            <a href="{% url 'category_edit' category.pk %}"
-               class="edit-button">Edit</a>
+            <div class="category-actions">
+                <a href="{% url 'category_edit' category.pk %}"
+                   class="edit-button">Edit</a>
+
+                <form method="POST"
+                      action="{% url 'category_delete' category.pk %}">
+                    {% csrf_token %}
+                    <button type="submit" class="delete-button">
+                        Delete
+                    </button>
+                </form>
+            </div>
         </div>
     {% endfor %}
 </div>
