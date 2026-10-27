@@ -16,8 +16,18 @@
 
         <p>Добавлено: {{ product.created_at|date:"d.m.Y H:i" }}</p>
 
-        <a href="{% url 'product_edit' product.pk %}"
-           class="edit-button">Edit</a>
+       <div class="product-actions">
+            <a href="{% url 'product_edit' product.pk %}"
+               class="edit-button">Edit</a>
+
+            <form method="POST"
+                  action="{% url 'product_delete' product.pk %}">
+                {% csrf_token %}
+                <button type="submit" class="delete-button">
+                    Delete
+                </button>
+            </form>
+        </div>
     </div>
 </div>
 

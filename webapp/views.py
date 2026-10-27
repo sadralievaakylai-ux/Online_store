@@ -95,3 +95,12 @@ def product_edit_view(request, pk):
         return redirect('product', pk=product.pk)
 
     return render(request, 'product_edit.html', {'product': product, 'categories': categories})
+
+def product_delete_view(request, pk):
+    product = get_object_or_404(Product, pk=pk)
+
+    if request.method == 'POST':
+        product.delete()
+        return redirect('products')
+
+    return redirect('product', pk=product.pk)

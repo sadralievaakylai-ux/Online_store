@@ -183,3 +183,10 @@ main {
 .delete-button:hover {
     background-color: #b95875;
 }
+
+.product-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
